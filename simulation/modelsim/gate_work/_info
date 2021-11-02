@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Projects\Vano\QUARTUS\CC_L3.1.2\simulation\modelsim
+El3_1_2
+Z1 w1635809467
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 Pha:T]_MmzTJCYhSbeLPQ1
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 mVG;b;]=zAIVfAk:WJ`El1
+Z8 dD:\Projects\Vano\QUARTUS\CC_L3.1.2\simulation\modelsim
+Z9 8L3_1_2_8_1200mv_85c_slow.vho
+Z10 FL3_1_2_8_1200mv_85c_slow.vho
+l0
+L34
+VJPzY=K:97PdzW`F^?Gi3c0
+!s100 dR<7WJkIS>1:Bc[i2>NV33
+Z11 OV;C;10.1d;51
+31
+!i10b 1
+Z12 !s108 1635809548.889000
+Z13 !s90 -reportprogress|300|-93|-work|work|L3_1_2_8_1200mv_85c_slow.vho|
+Z14 !s107 L3_1_2_8_1200mv_85c_slow.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 6 l3_1_2 0 22 JPzY=K:97PdzW`F^?Gi3c0
+l99
+L59
+V;9LbR0X^h`nbmS0j0Z_T>3
+!s100 o?m^aL^9Da1zVD`mXP9JV1
+R11
+31
+!i10b 1
+R12
+R13
+R14
+R15
+R16

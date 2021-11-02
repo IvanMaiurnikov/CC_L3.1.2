@@ -1,0 +1,66 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do L3_1_2_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying c:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {L3_1_2_8_1200mv_85c_slow.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity L3_1_2
+# -- Compiling architecture structure of L3_1_2
+# 
+vsim work.l3_1_2
+# vsim work.l3_1_2 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.l3_1_2(structure)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+wave create -driver freeze -pattern counter -startvalue 000 -endvalue 111 -type Range -direction Up -period 100ps -step 1 -repeat 1 -range 2 0 -starttime 0ps -endtime 800ps sim:/l3_1_2/A
+wave create -driver freeze -pattern repeater -initialvalue UUUUUUUU -period 100ps -sequence { 00000001 00000010 00000100 00001000 00010000 00100000 01000000 10000000  } -repeat forever -range 7 0 -starttime 0ps -endtime 800ps sim:/l3_1_2/D
+add wave -position end  sim:/l3_1_2/Y
+add wave -position end  sim:/l3_1_2/RES
+run -all
+
+wave create -driver freeze -pattern repeater -initialvalue UUUUUUUU -period 100ps -sequence { 00000000 00000001 00000000 00000010 00000000 00000100 00000000 00001000 00000000 00010000 00000000 00100000 00000000 01000000 00000000 10000000  } -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps {sim:/\MUX_8-1_NAND\/D}
+add wave -position insertpoint  \
+sim:/l3_1_2/D
+
+wave create -driver freeze -pattern counter -startvalue 000 -endvalue 111 -type Range -direction Up -period 100ps -step 1 -repeat 1 -range 2 0 -starttime 0ps -endtime 800ps sim:/l3_1_2/A
+wave create -driver freeze -pattern repeater -initialvalue UUUUUUUU -period 100ps -sequence { 00000001 00000010 00000100 00001000 00010000 00100000 01000000 10000000  } -repeat forever -range 7 0 -starttime 0ps -endtime 800ps sim:/l3_1_2/D
+
+wave create -driver freeze -pattern repeater -initialvalue UUUUUUUU -period 100ps -sequence { 00000000 00000001 00000000 00000010 00000000 00000100 00000000 00001000 00000000 00010000 00000000 00100000 00000000 01000000 00000000 10000000  } -repeat forever -range 7 0 -starttime 0ps -endtime 1600ps {sim:/l3_1_2/D}
+
+wave create -driver freeze -pattern counter -startvalue 000 -endvalue 111 -type Range -direction Up -period 100ps -step 1 -repeat 2 -range 2 0 -starttime 0ps -endtime 1600ps {sim:/l3_1_2/A}
+restart -f
+add wave -position 0 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/l3_1_2/A
+add wave -position 1 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/l3_1_2/D
+run -all
+restart -f
+run -all
+
+wave create -driver freeze -pattern counter -startvalue 000 -endvalue 111 -type Range -direction Up -period 200ps -step 1 -repeat 1 -range 2 0 -starttime 0ps -endtime 1600ps {sim:/l3_1_2/A}
+add wave -position 0 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/l3_1_2/A
+restart -f
+run -all
+wave editwrite -file D:/Projects/Vano/QUARTUS/CC_L3.1.2/simulation/modelsim/wave.do
